@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Commerce Test suite" allow-return-values="true" >
+    <listeners>
+        <listener class-name="com.ydv.utils.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="Domain" allow-return-values="true" >
+        <classes>
+            <class name="com.ydv.commerceBusinessLayer.Identity.SignUpTest">
+                <methods>
+                    <include name="loginWithCreatedUser"/>
+                </methods>
+            </class>
+            <class name="com.ydv.commerceBusinessLayer.Identity.UserAddressTest">
+                <methods>
+                    <include name="createAddress1"/>
+                    <include name="createAddress2"/>
+                    <include name="getAddress1ByKind"/>
+                    <include name="getAddress2ById"/>
+                    <include name="updateAddress2"/>
+                    <include name="setAddress2Default"/>
+                    <include name="unSetAddress2Default"/>
+                    <include name="deleteAddress2"/>
+                    <include name="setAddress1Default"/>
+                    <include name="deleteAddress1"/>
+                </methods>
+            </class>
+
+            <class name="com.ydv.commerceBusinessLayer.Item.ItemTest">
+            <methods>
+                <include name="getItembyItemId"/>
+                <include name="getItembySKU"/>
+                <include name="getItemBySKUs"/>
+            </methods>
+        </class>
+            <class name="com.ydv.commerceBusinessLayer.price.PriceTest">
+                <methods>
+                    <include name="getPriceByItemId"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

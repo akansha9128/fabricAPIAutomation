@@ -1,0 +1,61 @@
+package com.ydv;
+
+
+import org.aeonbits.owner.Config;
+
+
+@Config.Sources({
+        "classpath:./Properties/${environment}.properties"
+
+})
+
+public interface Environment extends Config {
+
+
+    @Key("BASE_ENDPOINT_IDENTITY")
+    public String BASE_ENDPOINT_IDENTITY();
+
+    @Key("BASE_ENDPOINT_CHANNEL")
+    public String BASE_ENDPOINT_CHANNEL();
+
+    @Key("BASE_ENDPOINT_PIM")
+    public String BASE_ENDPOINT_PIM();
+
+    @Key("BASE_ENDPOINT_OFFER")
+    public String BASE_ENDPOINT_OFFER();
+
+    @Key("BASE_ENDPOINT_XPM")
+    public String BASE_ENDPOINT_XPM();
+
+    @Key("BASE_ENDPOINT_REGIONS")
+    public String BASE_ENDPOINT_REGIONS();
+
+    @Key("BASE_ENDPOINT_COMMERCE_SERVICE_AUTH")
+    public String BASE_ENDPOINT_COMMERCE_SERVICE_AUTH();
+
+
+
+    @Key("BASE_ENDPOINT_COMMERCE_SERVICE_SHIPPING")
+    public String BASE_ENDPOINT_COMMERCE_SERVICE_SHIPPING();
+
+    @Key("BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_TAX")
+    public String BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_TAX();
+
+
+
+    @Key("BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_CART")
+    public String BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_CART();
+
+    @Key("BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_IDENTITY")
+    public String BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_IDENTITY();
+
+
+
+
+    @Key("BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_ITEM")
+    public String BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_ITEM();
+
+    @Key("BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_PRICE")
+    public String BASE_ENDPOINT_COMMERCE_BUSINESS_LAYER_PRICE();
+
+}

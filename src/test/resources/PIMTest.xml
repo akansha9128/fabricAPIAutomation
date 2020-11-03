@@ -1,0 +1,93 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Copilot PIM Test suite" allow-return-values="true" >
+    <listeners>
+        <listener class-name="com.ydv.utils.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="Domain" allow-return-values="true" >
+        <parameter name="environment" value="devEnv"></parameter>
+        <classes>
+            <class name="com.ydv.auth.LoginTest"> </class>
+
+          <!--  <class name="com.ydv.pim.CreateAttributeGroup">
+          <methods>
+              <include name="createAttribute" />
+              <include name="createAttributeGroup" />
+              <include name="createDuplicateAttributeGroup" />
+              <include name="renameAttributeGroup"/>
+              <include name="updateAttributeGroup"/>
+              <include name="deleteAttributeGroup"/>
+              <include name="deleteAlreadyDeletedGroup"/>
+              <include name="deleteAttribute1"/>
+              <include name="deleteAttribute2"/>
+
+
+           </methods>
+              
+            </class> -->
+
+         <!--  <class name="com.ydv.pim.CreateFamilyAttribute">
+            <methods>
+                <include name="createAttribute" />
+                <include name="createItemFamily" />
+               <include name="createDuplicateFamily" />
+                <include name="renameItemFamily"/>
+                <include name="deleteItemFamily"/>
+                <include name="deleteCreatedAttribute"/>
+
+
+
+            </methods>
+            </class>-->
+          <!-- <class name="com.ydv.pim.CreateFamilyGroup">
+            <methods>
+                <include name="createAttribute" />
+                <include name="createAttributeGroup" />
+                <include name="createFamilyBasedOnGroup"/>
+                <include name="deleteFamily"/>
+                <include name="deleteAttributeGroup"/>
+
+                <include name="deleteAttribute1"/>
+                <include name="deleteAttribute2"/>
+
+
+            </methods>
+
+        </class>-->
+          <!-- <class name="com.ydv.pim.CollectionTest">
+                <methods>
+                    <include name="createCollection" />
+                    <include name="createDuplicateCollection"/>
+                    <include name="renameCollection"/>
+                    <include name="deleteCollection"/>
+                </methods>
+            </class>-->
+            
+            <class name ="com.ydv.pim.ItemTest">
+                <methods>
+                    <include name="createAttribute"/>
+                    <include name="createVariantAttribute"/>
+                    <include name="createVariantAttribute2"/>
+                    <include name="createItemFamily"/>
+                    <include name="createCategory"/>
+                    <include name="createItem"/>
+                    <include name="addImageToItem"/>
+                    <include name="addAttributeValue"/>
+                    <include name="generateVariant"/>
+                    <include name="createVariantSku"/>
+                    <include name="enableDisableProduct"/>
+                    <include name="deleteVariant1"/>
+                    <include name="deleteVariant2"/>
+                    <include name="deleteItem"/>
+                    <include name="deleteCategory"/>
+                    <include name="deleteFamily"/>
+                    <include name="deleteVariantAttribute1"/>
+                    <include name="deleteVariantAttribute2"/>
+                    <include name="deleteAttribute"/>
+
+                </methods>
+            </class>
+          
+        </classes>
+    </test>
+</suite>

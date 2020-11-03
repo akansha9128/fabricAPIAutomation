@@ -1,0 +1,2 @@
+2020-04-11 13:00:42 INFO  apache.http.impl.execchain.RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {s}->https://dev01.copilot.fabric.zone:443: Connection reset
+2020-04-11 13:00:42 INFO  apache.http.impl.execchain.RetryExec:113 - Retrying request to {s}->https://dev01.copilot.fabric.zone:443

@@ -1,0 +1,121 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Copilot XPM Test suite" allow-return-values="true" >
+    <listeners>
+        <listener class-name="com.ydv.utils.ExtentReporterNG"></listener>
+    </listeners>
+
+
+    <test name="Domain" allow-return-values="true" >
+        <parameter name="environment" value="devEnv"></parameter>
+    <classes>
+            <class name="com.ydv.xpm.CreatePageTest">
+             <methods>
+                     <include name="createNewPage"/>
+                     <include name="createDuplicatePage"/> 
+                     <include name="renamePage"/>
+                     <include name="createNewVersion"/>
+                   
+                     <include name="inactivePage"/>
+                     <include name="activePage"/>
+
+                     <include name="archivePage"/>
+                     <include name="unarchivePage"/>
+                     <include name="deletePage"/> 
+                     
+                </methods>
+            </class> 
+            
+            
+            
+                 <class name="com.ydv.xpm.VersionLevelTest">
+             <methods>
+             
+                    <include name="createNewPage"/>
+                   
+                    <include name="editVersion"/>
+                     <include name="makeaCopy"/>
+                    <include name="versionArchive"/>
+                    <include name="versionUnArchive"/>
+                   
+                    <include name="publishVersion"/>
+                    <include name="versionDelete"/>
+                    <include name="deletePage"/>
+                   
+                 </methods>
+            </class>
+           
+            <class name="com.ydv.xpm.GlobalElementFooterTest">
+          
+           <methods>
+           
+                   <include name="createNewVersionFooter"/>
+                   <include name="createDuplicateNewVersionFooter"/>
+                   <include name="editFooter"/>
+                   <exclude name="makeACopyFooter"/>
+                   <include name="footerArchive"/>
+                   <include name="footerUnArchive"/>
+                   <include name="publisFooterhversion"/>
+                   <include name="deteleFooterVersion"/>
+                    
+            
+           </methods>
+          
+         </class>  
+          
+            <class name="com.ydv.xpm.GlobalElementFooterTest">
+          
+           <methods>
+           
+                  <include name="createNewVersionHeader"/>
+                  <include name="createDuplicateNewVersionHeader"/> 
+                  <include name="editHeaderVersion"/>
+                  <exclude name="makeaCopyHeaderVersion"/>
+                  <include name="headerArchive"/>
+                   <include name="headerUnArchive"/>
+                   <include name="publisHeaderhversion"/>
+                   <include name="deleteheaderVersion"/> 
+                  
+          
+           </methods>
+          
+         </class>
+            
+            
+            
+            
+            <class name="com.ydv.xpm.MenuTest">
+          
+              <methods>
+                    <include name="createMenuTest"/>
+                     <include name="createDuplicateMenuTest"/>
+                    <include name="renameMenu"/>
+                  <include name="enableMenu"/>
+                   <include name="disableMenu"/>
+                   <include name="enableMenuAgain"/>
+                   <include name="editItem"/>
+                  
+                        <include name="menuTree"/>
+                        <include name="createSubMenu"/>
+                        <include name="createDuplicateSubMenu"/>
+                          <include name="renameSubMenu"/>
+                        <include name="enableSubMenu"/>
+                         <include name="disbleSubMenu"/>
+                         <include name="editSubMenuItem"/>
+                        <include name="deleteSubMenu"/>
+                        <include name="deleteMenu"/>
+
+
+          </methods>
+
+           </class>  
+
+          
+            
+        </classes>
+    </test>
+
+</suite>
+
+
+

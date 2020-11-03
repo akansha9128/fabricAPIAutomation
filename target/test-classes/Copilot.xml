@@ -1,0 +1,99 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Copilot Test suite" allow-return-values="true" >
+    <listeners>
+        <listener class-name="com.ydv.utils.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="Domain" allow-return-values="true" >
+        <parameter name="environment" value="devEnv"></parameter>
+        <classes>
+          <!--  <class name="com.ydv.identity.permission.IdentityCreatePermissionTest">
+                    <methods>
+                        <include name="createPermission"/>
+                        <include name="createDuplicatePermission"/>
+                        <include name="verifyDuplicatePermissionMessage"/>
+                        <include name="deleteCreatedPermission"/>
+                        <include name="deleteAlreadyDeletedPermission"/>
+                        <include name="updateTheNameOfPermission"/>
+                    </methods>
+            </class>
+            <class name="com.ydv.identity.permission.IdentityTestGet401"/>
+            <class name="com.ydv.identity.permission.IdentityTestGet200"/>
+&lt;!&ndash;            <class name="com.ydv.identity.permission.identityBodyPermissionTest"/>&ndash;&gt;
+            <class name="com.ydv.identity.permission.IdentityHeaderTest"/>
+            <class name="com.ydv.identity.role.RoleCreateTest"/>
+            <class name="com.ydv.identity.role.roleBodyTest"/>-->
+
+            <class name="com.ydv.auth.LoginTest">
+                <methods>
+                    <include name="loginCopilot"/>
+                </methods>
+            </class>
+
+<!--            <class name="com.ydv.pim.CreateAttributeTest">-->
+<!--                <methods>-->
+<!--                    <include name="createAttribute"/>-->
+<!--                &lt;!&ndash;    <include name="createDuplicateAttribute"/>-->
+<!--                    <include name="renameAttributeName"/>-->
+<!--                    <include name="deleteCreatedAttribute"/>-->
+<!--                    <include name="deleteAlreadyDeletedAttribute"/>&ndash;&gt;-->
+<!--                </methods>-->
+<!--            </class>-->
+
+         <class name="com.ydv.pim.CategoryTest">
+                <methods>
+                    <include name="createCategory"/>
+                    <include name="createChildCategory"/>
+                    <include name="renameChildCategory"/>
+                    <include name="deleteChildCategory"/>
+                    <include name="deleteParentCategory"/>
+                </methods>
+
+            </class>
+<!--            <class name="com.ydv.pim.CreateFamilyAttribute">-->
+<!--                <methods>-->
+<!--                    <include name="createAttribute"/>-->
+<!--                    <include name="createItemFamily"/>-->
+<!--                    <include name="createDuplicateFamily"/>-->
+<!--                    <include name="renameItemFamily"/>-->
+<!--                    <include name="deleteItemFamily"/>-->
+<!--                    <include name="deleteCreatedAttribute"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="com.ydv.pim.ItemTest">-->
+<!--                <methods>-->
+<!--                    <include name="createAttribute"/>-->
+<!--                    <include name="createVariantAttribute"/>-->
+<!--                    <include name="createVariantAttribute2"/>-->
+<!--                    <include name="createItemFamily"/>-->
+<!--                    <include name="createCategory"/>-->
+<!--                    <include name="createItem"/>-->
+<!--                    <include name="addImageToItem"/>-->
+<!--                    <include name="addAttributeValue"/>-->
+<!--                    <include name="generateVariant"/>-->
+<!--                    <include name="createVariantSku"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="com.ydv.offer.OfferTest">-->
+<!--                <methods>-->
+<!--                    <include name="searchCreatedItem"/>-->
+<!--                    <include name="getProduct"/>-->
+<!--                    <include name="addPriceToVariant"/>-->
+<!--                    <include name="addPriceToAllVariant"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="com.ydv.offer.GetCurrencyTest">-->
+<!--                <methods>-->
+<!--                    <include name="getCurrency"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+        </classes>
+    </test>
+</suite>
+
+
+

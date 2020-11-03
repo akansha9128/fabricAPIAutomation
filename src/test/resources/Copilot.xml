@@ -1,0 +1,83 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Copilot Test suite" allow-return-values="true" >
+    <listeners>
+        <listener class-name="com.ydv.utils.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="Domain" allow-return-values="true" >
+        <parameter name="environment" value="qaEnv"></parameter>
+        <parameter name="userId" value="8739392294"></parameter>
+        <parameter name="emailId" value="shivam@fabric.inc"></parameter>
+        <parameter name="password" value="shivam3112"></parameter>
+        <classes>
+
+            <class name="com.ydv.auth.LoginTest">
+                <methods>
+                    <include name="loginCopilot"/>
+                </methods>
+            </class>
+
+<!--            <class name="com.ydv.pim.CreateAttributeTest">-->
+<!--            </class>-->
+
+<!--         <class name="com.ydv.pim.CategoryTest">-->
+<!--         </class>-->
+
+            <class name="com.ydv.pim.CreateAttributeGroup">
+            </class>
+<!--            <class name="com.ydv.pim.CreateFamilyTest">-->
+<!--            </class>-->
+
+<!--            <class name="com.ydv.pim.ItemTest">-->
+<!--                <methods>-->
+<!--                    <include name="createAttribute"/>-->
+<!--                    <include name="createVariantAttribute"/>-->
+<!--                    <include name="createVariantAttribute2"/>-->
+<!--                    <include name="createItemFamily"/>-->
+<!--                    <include name="createCategory"/>-->
+<!--                    <include name="createItem"/>-->
+<!--                    <include name="addImageToItem"/>-->
+<!--                    <include name="addAttributeValue"/>-->
+<!--                    <include name="generateVariant"/>-->
+<!--                    <include name="createVariantSku"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="com.ydv.offer.OfferTest">-->
+<!--                <methods>-->
+<!--                    <include name="searchCreatedItem"/>-->
+<!--                    <include name="getProduct"/>-->
+<!--                    <include name="addPriceToVariant"/>-->
+<!--                    <include name="addPriceToAllVariant"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="com.ydv.offer.GetCurrencyTest">-->
+<!--                <methods>-->
+<!--                    <include name="getCurrency"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+        </classes>
+    </test>
+</suite>
+
+
+        <!--  <class name="com.ydv.identity.permission.IdentityCreatePermissionTest">
+                           <methods>
+                               <include name="createPermission"/>
+                               <include name="createDuplicatePermission"/>
+                               <include name="verifyDuplicatePermissionMessage"/>
+                               <include name="deleteCreatedPermission"/>
+                               <include name="deleteAlreadyDeletedPermission"/>
+                               <include name="updateTheNameOfPermission"/>
+                           </methods>
+                   </class>
+                   <class name="com.ydv.identity.permission.IdentityTestGet401"/>
+                   <class name="com.ydv.identity.permission.IdentityTestGet200"/>
+       &lt;!&ndash;            <class name="com.ydv.identity.permission.identityBodyPermissionTest"/>&ndash;&gt;
+                   <class name="com.ydv.identity.permission.IdentityHeaderTest"/>
+                   <class name="com.ydv.identity.role.RoleCreateTest"/>
+                   <class name="com.ydv.identity.role.roleBodyTest"/>-->
+
+
